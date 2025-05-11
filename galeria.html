@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Fotos</title>
+  <nav>
+    <a href="datos.html.html" class="nav-link">Datos</a>
+    <a href="logros.html.html" class="nav-link">logros</a>
+    <a href="index.html"class="nav-link">inicio</a>
+</nav>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #ffa4a4;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Galería de Fotos</h1>
+
+  <div class="gallery">
+    <img src="01.PNG" alt="Foto 1">
+    <img src="02.PNG" alt="Foto 2">
+    <img src="03.PNG" alt="Foto 3">
+    <img src="04.PNG" alt="Foto 4">
+    <img src="Captura de pantalla 2024-11-17 172142.png" alt="Foto 5">
+    <img src="Captura de pantalla 2024-11-17 181341.png" alt="Foto 6">
+    <img src="Captura de pantalla 2025-04-05 124804.png" alt="Foto 7">
+    <img src="0.5.PNG" alt="Foto 8">
+    <img src="06.PNG" alt="Foto 9">
+    <img src="oooss56.PNG" alt="Foto 10">
+  </div>
+  <!-- JavaScript del carrusel -->
+<guión>
+ 
+  </script>
+  <!-- Área de formulario -->
+  <div style="fondo: #e0f7fa; relleno: 30px;">
+  <h2 style="text-align: center; color: #006064;">Cuestionario rápido</h2>
+  <form id="miFormulario" onsubmit="procesarFormulario(evento)" style="ancho máximo: 600px; margen: automático;">
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" required style="ancho: 100%; relleno: 10px;"><br><br>
+  
+  <label for="correo">Correo electrónico:</label><br>
+  <input type="email" id="correo" name="correo" required style="ancho: 100%; relleno: 10px;"><br><br>
+  
+  <label for="comentario">Comentario:</label><br>
+  <textarea id="comentario" name="comentario" rows="4" required style="width: 100%; padding: 10px;"></textarea><br><br>
+  
+  <button type="submit" style="padding: 10px 20px; background-color: #00796b; color: blanco; borde: ninguno; cursor: puntero;">
+  Enviar
+  </botón>
+  </form>
+  
+  <!-- Aquí se mostrará la información ingresada -->
+  <div id="resultado" style="margin-top: 30px; background-color: #ffffff; padding: 20px; border-radius: 10px; display: none;">
+  <h3 style="color: #004d40;">Datos recibidos:</h3>
+  <p><strong>Nombre:</strong> <span id="r-nombre"></span></p>
+  <p><strong>Correo:</strong> <span id="r-correo"></span></p>
+  <p><strong>Comentario:</strong> <span id="r-comentario"></span></p>
+  </div>
+  </div>
+  
+  <guión>
+ 
+
+</body>
+</html>
